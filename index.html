@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet App</title>
+  <script type="module" crossorigin src="/assets/index-B8NpYJ2u.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DPUxCo5n.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Diet App</h1>
+        
+        <!-- Bagian untuk registrasi dan login -->
+        <div id="auth">
+            <h2 id="authTitle">Register</h2>
+            <form id="registerForm" style="display: block;">
+                <input type="text" id="name" placeholder="Nama" required>
+                <select id="gender" required>
+                    <option value="" disabled selected>Jenis Kelamin</option>
+                    <option value="male">Laki-laki</option>
+                    <option value="female">Perempuan</option>
+                </select>
+                <input type="number" id="age" placeholder="Usia (tahun)" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <input type="number" id="weight" placeholder="Berat Badan (kg)" required>
+                <input type="number" id="height" placeholder="Tinggi Badan (cm)" required>
+                <button type="submit">Register</button>
+            </form>
+            <form id="loginForm" style="display: none;">
+                <input type="email" id="loginEmail" placeholder="Email" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p id="toggleAuth">Sudah punya akun? <span id="toggleLink">Login</span></p>
+        </div>
+        
+        <!-- Bagian untuk menampilkan hasil -->
+        <div id="result" style="display: none;">
+            <h2>Informasi Pengguna</h2>
+            <div id="userInfo"></div>
+            <button id="logoutButton">Logout</button>
+            <div id="foodSearch" style="display: none;">
+                <h2>Cari Makanan</h2>
+                <input type="text" id="foodInput" placeholder="Nama Makanan">
+                <button id="searchFood">Cari</button>
+                <div id="foodResults"></div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- Mengimpor file JavaScript -->
+</body>
+</html>
